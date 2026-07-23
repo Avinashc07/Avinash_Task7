@@ -1,0 +1,368 @@
+*{ 
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f9ff;
+    color:#333;
+    line-height:1.6;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#0077b6;
+    color:white;
+    padding:18px 8%;
+}
+
+.logo h2{
+    font-size:32px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:20px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd60a;
+}
+
+nav button{
+    padding:10px 22px;
+    border:none;
+    background:white;
+    color:#0077b6;
+    border-radius:6px;
+    font-size:18px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+nav button:hover{
+    background:#ffd60a;
+    color:black;
+}
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:90vh;
+    padding:50px 8%;
+    gap:40px;
+}
+
+.left{
+    flex:1;
+}
+
+.left h1{
+    font-size:52px;
+    color:#003566;
+    margin-bottom:20px;
+}
+
+.left p{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.left button{
+    padding:14px 28px;
+    font-size:18px;
+    border:none;
+    background:#0077b6;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.left button:hover{
+    background:#023e8a;
+}
+
+.right{
+    flex:1;
+    text-align:center;
+}
+
+.right img{
+    width:100%;
+    max-width:520px;
+}
+
+.services{
+    padding:70px 8%;
+    text-align:center;
+}
+
+.services h2{
+    font-size:38px;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:250px;
+    background:white;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:170px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+.card p{
+    font-size:15px;
+}
+
+
+.why{
+    padding:70px 8%;
+    text-align:center;
+}
+
+.why h2{
+    font-size:36px;
+    margin-bottom:30px;
+}
+
+.why ul{
+    list-style:none;
+}
+
+.why ul li{
+    font-size:20px;
+    margin:15px 0;
+}
+
+.pricing{
+    padding:70px 8%;
+    text-align:center;
+}
+
+.pricing h2{
+    margin-bottom:30px;
+    font-size:36px;
+}
+
+table{
+    width:70%;
+    margin:auto;
+    border-collapse:collapse;
+}
+
+table th,
+table td{
+    border:1px solid #ddd;
+    padding:15px;
+}
+
+table th{
+    background:#0077b6;
+    color:white;
+}
+
+.contact{
+    padding:70px 8%;
+    text-align:center;
+}
+
+.contact h2{
+    margin-bottom:25px;
+    font-size:36px;
+}
+
+form{
+    width:60%;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+form input,
+form textarea{
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+}
+
+form textarea{
+    resize:none;
+    height:140px;
+}
+
+form button{
+    padding:15px;
+    border:none;
+    background:#0077b6;
+    color:white;
+    font-size:18px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+
+footer{
+    background:#023e8a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+
+@media(max-width:1024px){
+
+    /* Navbar */
+
+    .logo h2{
+        font-size:24px;
+    }
+
+    nav ul li a{
+        font-size:16px;
+    }
+
+    nav button{
+        font-size:15px;
+        padding:8px 18px;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding:40px 5%;
+    }
+
+    .left h1{
+        font-size:38px;
+    }
+
+    .left p{
+        font-size:18px;
+    }
+
+    .left button{
+        font-size:16px;
+    }
+
+    .right img{
+        max-width:380px;
+    }
+
+    table{
+        width:90%;
+    }
+
+    form{
+        width:80%;
+    }
+}
+
+
+@media(max-width:768px){
+
+    nav{
+        padding:15px 20px;
+    }
+
+
+    nav ul{
+        display:none;
+    }
+
+    
+    .logo h2{
+        font-size:22px;
+    }
+
+    nav button{
+        font-size:14px;
+        padding:8px 16px;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding:30px 20px;
+    }
+
+    .left h1{
+        font-size:30px;
+    }
+
+    .left p{
+        font-size:16px;
+    }
+
+    .left button{
+        font-size:15px;
+        padding:12px 20px;
+    }
+
+    .right img{
+        width:90%;
+        max-width:300px;
+    }
+
+    .services h2,
+    .why h2,
+    .pricing h2,
+    .contact h2{
+        font-size:30px;
+    }
+
+    .card{
+        width:100%;
+    }
+
+    table{
+        width:100%;
+        font-size:14px;
+    }
+
+    form{
+        width:100%;
+    }
+
+    .why ul li{
+        font-size:17px;
+    }
+}
